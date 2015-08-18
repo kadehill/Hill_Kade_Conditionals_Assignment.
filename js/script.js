@@ -5,15 +5,17 @@
 //Conditionals Assignment
 
 
-//We will be calculating calorie intake using the formula for BMR (basal metabolic rate)
-//BMR Men = 66.47 + (13.75 x W) + (5.0 x H) - (6.75 x A)
-//BMR Women = 665.09 + (9.56 x W) + (1.84 x H) - 4.67 x A)
+//We will be calculating if the user is reaching their exercise goals per week.
+
 //Variables
 
-var weight;
-var height;
-var age;
-var male = true;
+
+var totalHoursPerWeek = 168; //total hours in a week
+var days;        //The number of days per week user exercises
+var hoursPerDay; //The number of hours per day user spends exercising
+var personalGoal; //The user's personal exercise goal
+
+
 
 
 
