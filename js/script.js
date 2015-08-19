@@ -15,7 +15,9 @@ var days;        //The number of days per week user exercises
 var hoursPerDay; //The number of hours per day user spends exercising
 var personalGoal; //The user's personal exercise goal
 
-
-
+//Prompts
+hoursPerDay = prompt("We are calculating if you've reached your fitness goal. \n Enter how many hours you exercise per day.")
+days = prompt("Enter how many days you exercise per week.")
+personalgoal = prompt("How many hours per week do you strive to execise?")
 
 
