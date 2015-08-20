@@ -16,7 +16,13 @@ var total; //The number of hours that the user is short of reaching the goal.
 
 //Prompts
 personalGoal = prompt("We are calculating if you've reached your fitness goal. \nHow many hours per week do you strive to exercise?");
+if(personalGoal == ""){
+    personalGoal = prompt("Yikes! You forgot to set a workout goal. \nPlease do so now.")
+}
 hoursPerDay = prompt("Enter how many hours you exercise per day.");
+if(hoursPerDay == ""){
+    hoursPerDay = prompt("Oh No! You forgot to enter how many hours you exercise per day. \nPlease enter now.")
+}
 days = prompt("How many days do you exercise per week?");
 if (days == ""){
     days = prompt("Oops! You forgot to enter how many days you exercise per week. \nPlease enter now.");
@@ -35,4 +41,4 @@ if(personalGoal > total && total == 0){
 }
 
 //Workout reminder if user has not reached weekly goal
-(personalGoal > total)? console.log("No need to work out today.") : console.log("Don't forget to workout for" + " "+ hoursPerDay + " " + "hours today.");
+(personalGoal <= total)? console.log("No need to work out today.") : console.log("Don't forget to workout for" + " "+ hoursPerDay + " " + "hours today.");
