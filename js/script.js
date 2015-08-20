@@ -33,13 +33,13 @@ total = Number(personalGoal) - Number(hoursPerDay) * Number(days);
 console.log("You are" + " " +total + " " + "hours short of reaching your weekly goal."); //This log will display total hours short of reaching goal.
 console.log("Your goal was" + " "+ personalGoal + " " + "hours per week."); //this log will confirm user's goal.
 
-//outputs
+//outputs, Logical Operator
 if(personalGoal > total && total == 0){
     console.log("Congratulations! You reached your goal!"); //Congratulates user for reaching their goal.
 }else{
     console.log("Sorry, you did not reach your goal."); //Advises user that they did not reach their goal
 }
 
-//Ternary Variable
+//Ternary conditional statement
 //Workout reminder if user has not reached weekly goal
 (personalGoal > total || !personalGoal)? console.log("No need to work out today.") : console.log("Don't forget to workout for" + " "+ hoursPerDay + " " + "hours today.");
