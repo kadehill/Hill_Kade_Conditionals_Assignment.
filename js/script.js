@@ -12,12 +12,15 @@ var days;        //The number of days per week user exercises.
 var hoursPerDay; //The number of hours per day user spends exercising.
 var personalGoal; //The user's personal exercise goal.
 var total; //The number of hours that the user is short of reaching the goal.
-var cheatWeek = true;
+
 
 //Prompts
 personalGoal = prompt("We are calculating if you've reached your fitness goal. \nHow many hours per week do you strive to exercise?");
 hoursPerDay = prompt("Enter how many hours you exercise per day.");
 days = prompt("How many days do you exercise per week?");
+if (days == ""){
+    days = prompt("Oops! You forgot to enter how many days you exercise per week. \nPlease enter now.");
+}
 
 //Equation determines how many hours short user is from reaching their goal.
 total = Number(personalGoal) - Number(hoursPerDay) * Number(days);
@@ -31,3 +34,5 @@ if(personalGoal > total && total == 0){
     console.log("Sorry, you did not reach your goal.");
 }
 
+//Workout reminder if user has not reached weekly goal
+(personalGoal > total)? console.log("No need to work out today.") : console.log("Don't forget to workout for" + " "+ hoursPerDay + " " + "hours today.");
