@@ -24,4 +24,8 @@ var total = Number(personalGoal) - Number(hoursPerDay) * Number(days);
 console.log(total);
 
 //outputs
-
+if(personalGoal == total){
+    console.log("You reached your goal!");
+}else{
+    console.log("Sorry, you did not reach your goal.");
+}
